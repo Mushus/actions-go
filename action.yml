@@ -1,0 +1,10 @@
+name: Golang Test Reporter
+description: Submit Golang test result to Github Actions
+author: Mushus
+inputs:
+  report_path:
+    description: 'test result file path formated by json'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
